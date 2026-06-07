@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "8080:8080"
+    networks:
+      - equinorte-network
+
+  frontend:
+    build: ../../equinorte-factura-app/equinorte-factura-app
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - equinorte-network
+
+networks:
+  equinorte-network:
+    driver: bridge
