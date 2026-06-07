@@ -1,6 +1,6 @@
 # equinorte-factura-api
 
-Backend de la prueba técnicaz para Equinorte.
+Backend de la prueba técnica para Equinorte.
 Construido con **Spring Boot 3 + H2 Database**.
 
 > Frontend: https://github.com/brayantorre3/equinorte-factura-app
@@ -121,6 +121,19 @@ src/main/resources/
 ├── application.properties
 └── data.sql
 ```
+
+---
+
+## Docker
+
+Para correr el proyecto completo (backend + frontend) con Docker:
+
+```bash
+docker-compose up --build
+```
+
+- Frontend: http://localhost
+- Backend: http://localhost:8080
 
 ---
 
