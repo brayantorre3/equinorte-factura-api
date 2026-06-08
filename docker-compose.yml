@@ -9,7 +9,7 @@ services:
       - equinorte-network
 
   frontend:
-    build: ../../equinorte-factura-app/equinorte-factura-app
+    build: ../equinorte-factura-app
     ports:
       - "80:80"
     depends_on:
