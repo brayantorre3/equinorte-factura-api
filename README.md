@@ -126,9 +126,18 @@ src/main/resources/
 
 ## Docker
 
-Para correr el proyecto completo (backend + frontend) con Docker:
+Para correr el proyecto completo (backend + frontend) con Docker, ambos repositorios deben estar clonados en la misma carpeta:
+
+```
+alguna-carpeta/
+├── equinorte-factura-api/
+└── equinorte-factura-app/
+```
 
 ```bash
+git clone https://github.com/brayantorre3/equinorte-factura-api.git
+git clone https://github.com/brayantorre3/equinorte-factura-app.git
+cd equinorte-factura-api
 docker-compose up --build
 ```
 
